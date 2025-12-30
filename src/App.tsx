@@ -1,6 +1,5 @@
-import photo1 from './assets/img1.jpg';
-import photo2 from './assets/img2.jpg';
-
+import photo1 from './img1.jpg';
+import photo2 from './img2.jpg';
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Confetti from 'react-confetti';
