@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+.hackathon-root-dark {
+  min-height: 100vh;
+  width: 100vw;
+  /* Continuous Animated Background */
+  background: linear-gradient(-45deg, #12020a, #2b0518, #000000, #3d0320);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding: 15px;
+  overflow: hidden;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.neon-card {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(20px);
+  padding: 35px 25px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 20, 147, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 350px; /* Mobile width alignment */
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.15);
+}
+
+.orbitron-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff1493;
+  text-shadow: 0 0 10px #ff1493;
+  margin: 15px 0;
+}
+
+.neon-pink-btn {
+  background: #ff007f;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff007f;
+  margin-top: 15px;
+}
+
+.neon-input {
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #ff007f;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 15px;
+}
+/* Resizes the white polaroid frames to be mobile-appropriate */
+.polaroid-frame {
+  background: white;
+  padding: 8px 8px 22px 8px; /* Extra bottom padding for the 'polaroid' look */
+  border-radius: 2px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  width: 120px; /* Controlled width */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fixes the image size inside the frame */
+.polaroid-img {
+  width: 100%;
+  height: 100px; /* Fixed height to prevent stretching */
+  object-fit: cover; /* Crops image to fit perfectly */
+  display: block;
+  border: 1px solid #ddd;
+}
+
+/* Container to handle the tilting alignment */
+.polaroid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  width: 100%;
+}
+.photo-placeholder { background: #1a1a1a; width: 110px; height: 100px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #555; }
+
+.game-target { font-size: 3rem; cursor: pointer; margin-top: 20px; animation: bounce 1s infinite; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+.reveal-title { font-family: 'Orbitron', sans-serif; font-size: 2rem; color: #ff1493; text-shadow: 0 0 20px #ff1493; }
+
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-size: 0.8rem; color: #888; }
