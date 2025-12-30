@@ -44,11 +44,11 @@ export default function App() {
     <div className="polaroid-container">
   <motion.div initial={{ rotate: -10 }} className="polaroid-frame">
     {/* Use the photo1 variable here without quotes */}
-    <img src={photo1} alt="Us" className="polaroid-img" />
+   <img src="/img1.jpg" alt="Us" className="polaroid-img" />
   </motion.div>
   <motion.div initial={{ rotate: 10 }} className="polaroid-frame">
     {/* Use the photo2 variable here without quotes */}
-    <img src={photo2} alt="2025" className="polaroid-img" />
+    <img src="/img2.jpg" alt="2025" className="polaroid-img" />
   </motion.div>
 </div>
     <button className="neon-pink-btn" onClick={next}>Beautiful Moments</button>
