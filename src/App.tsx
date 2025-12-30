@@ -1,5 +1,4 @@
-import photo1 from './img1.jpg';
-import photo2 from './img2.jpg';
+
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Confetti from 'react-confetti';
@@ -41,13 +40,12 @@ export default function App() {
       <span className="stage-num">Stage 3</span>
       <Camera size={20} color="#ff1493" />
     </div>
-    <div className="polaroid-container">
+<div className="polaroid-container">
   <motion.div initial={{ rotate: -10 }} className="polaroid-frame">
-    {/* Use the photo1 variable here without quotes */}
-   <img src="/img1.jpg" alt="Us" className="polaroid-img" />
+    {/* Use direct paths for files in the public folder */}
+    <img src="/img1.jpg" alt="Us" className="polaroid-img" />
   </motion.div>
   <motion.div initial={{ rotate: 10 }} className="polaroid-frame">
-    {/* Use the photo2 variable here without quotes */}
     <img src="/img2.jpg" alt="2025" className="polaroid-img" />
   </motion.div>
 </div>
